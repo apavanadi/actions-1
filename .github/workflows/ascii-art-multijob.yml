@@ -13,7 +13,7 @@ jobs:
        run: cowsay -f dragon "Run for cover, I am DRAGON...RAWR" >> dragon.txt
 
      - name: Sleep for 30 Seconds
-       run: Sleep 30
+       run: sleep 30
 
   test_job_2:
     runs-on: ubuntu-latest
@@ -29,6 +29,6 @@ jobs:
      steps:
        - name: Read File
          run: cat dragon.txt
-         
+
        - name: deploy
          run: echo deploying... .. .
