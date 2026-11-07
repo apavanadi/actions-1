@@ -16,6 +16,7 @@ jobs:
           echo "My first github actions Workflow"
           ls -lrt
           cat README.md
+          
        - name: Generate ASCII Artifactory
          run: cowsay -f dragon "Run for cover, I am DRAGON...RAWR" >> dragon.txt
     
