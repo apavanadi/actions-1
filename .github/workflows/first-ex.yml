@@ -11,11 +11,11 @@ jobs:
        - name: checkout Repository
          uses: actions/checkout@v7
 
-       - name: Welcome message
-         run: echo "My first github actions Workflow"
-      
-       - name: list files
-         run: ls -l 
-
-       - name: Read files
-         run: cat README.md
+       - name: List and Read files
+         run: |
+          echo "My first github actions Workflow"
+          ls -lrt
+          cat README.md
+       - name: Generate ASCII Artifactory
+         run: cowsay -f dragon "Run for cover, I am DRAGON...RAWR" >> dragon.txt
+    
